@@ -1,0 +1,6 @@
+[submodule "fuzzbench"]
+	url = git@github.com:fuzz-evaluator/fuzzbench.git
+	path = fuzzbench
+[submodule "EcoFuzz-upstream"]
+	path = EcoFuzz-upstream
+	url = https://github.com/fuzz-evaluator/EcoFuzz-upstream.git

@@ -1,0 +1,370 @@
+<!--
+     Copyright 2020 Google LLC
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FuzzBench: 24h-ecofuzz-eval-libpng report
+            
+        </title>
+
+        <!-- Import Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Import Google Material Icon Font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+<body>
+    <div class="container"><div class="row"><div class="col s12 m10 l10">
+
+        <h1 class="center-align brown-text text-darken-3">
+            FuzzBench: 24h-ecofuzz-eval-libpng report
+        </h1>
+        
+        <div id="summary" class="section scrollspy">
+            <h2 class="green-text text-darken-3">experiment summary</h2>
+
+            
+
+            No aggregate ranking as the data contains a single benchmark.
+
+             
+
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">
+                        Median relative code-coverages on each benchmark
+                    </div>
+                    <div class="collapsible-body">
+                        <p style="margin-bottom:3cm;">
+                      <strong>Note:</strong> The relative coverage summary table shows the median
+                      relative performance of each fuzzer to the <em>experiment maximum</em>.  Thus the 
+                      highest relative performance may not be 100%.<br>
+                      <code> trial_relative_coverage  = trial_coverage / experiment_max_coverage</code><br>
+                        </p>
+                        <style type="text/css">
+#T_c7737 td {
+  width: 25px;
+  padding: 7px 5px;
+}
+#T_c7737  th {
+  width: 25px;
+  padding: 7px 5px;
+}
+#T_c7737 th.col_heading {
+  max-width: 25px;
+  overflow: visible;
+  transform-origin: bottom left;
+  transform: translateX(20px) rotate(-45deg);
+}
+#T_c7737_row0_col0, #T_c7737_row2_col0 {
+  background-color: #badde8;
+  color: #000000;
+  background-color: lightgreen;
+}
+#T_c7737_row0_col1, #T_c7737_row0_col2, #T_c7737_row2_col1, #T_c7737_row2_col2 {
+  background-color: #d5e7ed;
+  color: #000000;
+}
+#T_c7737_row1_col0 {
+  background-color: #badde8;
+  color: #000000;
+  background-color: lightgreen;
+  border-bottom: 3px solid black;
+}
+#T_c7737_row1_col1, #T_c7737_row1_col2 {
+  background-color: #d5e7ed;
+  color: #000000;
+  border-bottom: 3px solid black;
+}
+</style>
+<table id="T_c7737">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_c7737_level0_col0" class="col_heading level0 col0" >afl_2_52_b</th>
+      <th id="T_c7737_level0_col1" class="col_heading level0 col1" >aflfast</th>
+      <th id="T_c7737_level0_col2" class="col_heading level0 col2" >ecofuzz</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_c7737_level0_row0" class="row_heading level0 row0" >FuzzerMedian</th>
+      <td id="T_c7737_row0_col0" class="data row0 col0" >99.00</td>
+      <td id="T_c7737_row0_col1" class="data row0 col1" >97.00</td>
+      <td id="T_c7737_row0_col2" class="data row0 col2" >97.00</td>
+    </tr>
+    <tr>
+      <th id="T_c7737_level0_row1" class="row_heading level0 row1" >FuzzerMean</th>
+      <td id="T_c7737_row1_col0" class="data row1 col0" >99.00</td>
+      <td id="T_c7737_row1_col1" class="data row1 col1" >97.00</td>
+      <td id="T_c7737_row1_col2" class="data row1 col2" >97.00</td>
+    </tr>
+    <tr>
+      <th id="T_c7737_level0_row2" class="row_heading level0 row2" >libpng_libpng_read_fuzzer</th>
+      <td id="T_c7737_row2_col0" class="data row2 col0" >99.00</td>
+      <td id="T_c7737_row2_col1" class="data row2 col1" >97.00</td>
+      <td id="T_c7737_row2_col2" class="data row2 col2" >97.00</td>
+    </tr>
+  </tbody>
+</table>
+
+                      <ul>
+                          <li> Fuzzers are sorted by "FuzzerMean" (average median relative coverage), highest on the left.</li>
+                          <li> Green background = highest relative median coverage.</li>
+                          <li> Blue gradient background = greater than 95% relative median coverage.</li>
+                      </ul>
+                    </div>
+                </li>
+            </ul>
+
+            
+
+        </div> <!-- id="summary" -->
+
+        
+
+        <div id="libpng_libpng_read_fuzzer" class="section scrollspy">
+
+            <h2 class="green-text text-darken-3">libpng_libpng_read_fuzzer summary</h2>
+
+            <div class="row">
+                <div class="col s6">
+            
+                    <h5 class="center-align">Ranking by median reached code coverage</h5>
+                    <img class="responsive-img materialboxed"
+                         src="libpng_libpng_read_fuzzer_ranking.svg">
+            
+                </div>
+                <div class="col s6">
+                    <h5 class="center-align">Reached code coverage distribution</h5>
+                    <img class="responsive-img materialboxed"
+                         src="libpng_libpng_read_fuzzer_boxplot.svg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs">
+            
+                      <li class="tab col s6"><a href="#libpng_libpng_read_fuzzer_code_normal" class="green-text text-darken-3">Code coverage (linear)</a></li>
+                      <li class="tab col s6"><a href="#libpng_libpng_read_fuzzer_code_logscale" class="green-text text-darken-3">Code coverage (log)</a></li>
+            
+                    </ul>
+                </div>
+                <div id="libpng_libpng_read_fuzzer_code_normal" class="col s12">
+                    <h5 class="center-align">Mean code coverage growth over time</h5>
+                    <img class="responsive-img materialboxed"
+                         src="libpng_libpng_read_fuzzer_coverage_growth.svg">
+                </div>
+                <div id="libpng_libpng_read_fuzzer_code_logscale" class="col s12">
+                    <h5 class="center-align">Mean code coverage growth over time</h5>
+                    <img class="responsive-img materialboxed"
+                         src="libpng_libpng_read_fuzzer_coverage_growth_logscale.svg">
+                </div>
+            
+                <div class="center-align">
+                    * The error bands show the 95% confidence interval
+                      around the mean code coverage.
+                </div>
+            </div>
+
+            
+
+            
+
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">
+                        Sample statistics and statistical significance (code coverage)
+                    </div>
+                    <div class="collapsible-body">
+
+                        <h5 class="center-align">Code coverage sample statistics</h5>
+                        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>median</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+    <tr>
+      <th>fuzzer</th>
+      <th>time</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>afl_2_52_b</th>
+      <th>86400</th>
+      <td>10.0</td>
+      <td>1967.9</td>
+      <td>25.396631</td>
+      <td>1913.0</td>
+      <td>1961.75</td>
+      <td>1974.5</td>
+      <td>1985.5</td>
+      <td>1993.0</td>
+    </tr>
+    <tr>
+      <th>aflfast</th>
+      <th>86400</th>
+      <td>10.0</td>
+      <td>1926.9</td>
+      <td>44.056655</td>
+      <td>1842.0</td>
+      <td>1901.00</td>
+      <td>1938.5</td>
+      <td>1962.5</td>
+      <td>1974.0</td>
+    </tr>
+    <tr>
+      <th>ecofuzz</th>
+      <th>86400</th>
+      <td>10.0</td>
+      <td>1927.1</td>
+      <td>32.171243</td>
+      <td>1841.0</td>
+      <td>1933.25</td>
+      <td>1938.5</td>
+      <td>1941.0</td>
+      <td>1950.0</td>
+    </tr>
+  </tbody>
+</table>
+                        <br>
+
+                        <div class="row">
+                            <div class="col s6">
+                                <h5 class="center-align">Vargha-Delaney A12 measure</h4>
+                                    <img class="responsive-img materialboxed"
+                                         src="libpng_libpng_read_fuzzer_varga_delaney_a12_plot.svg">
+                                    The table summarizes the A12 values from the
+                                    pairwise Vargha-Delaney A measure of effect size.
+                                    Green cells indicate the probability the fuzzer in the
+                                    row will outperform the fuzzer in the column.
+                            </div>
+
+                            <div class="col s6">
+                                <h5 class="center-align">Mann-Whitney U test</h4>
+                                    <img class="responsive-img materialboxed"
+                                         src="libpng_libpng_read_fuzzer_mann_whitney_plot.svg">
+                                    The table summarizes the p values of
+                                    pairwise Mann-Whitney U tests.
+                                    Green cells indicate that the reached
+                                    coverage distribution of a given fuzzer pair
+                                    is significantly different.
+                            </div>
+                        </div> <!-- row -->
+
+                    </div>
+                </li>
+            </ul>
+
+            
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">
+                        Unique code coverage plots
+                    </div>
+                    <div class="collapsible-body">
+
+                        <div class="row">
+                            <div class="col s6 offset-s3">
+                                <h5 class="center-align">Ranking by unique code branches covered</h4>
+                                    <img class="responsive-img materialboxed"
+                                         src="libpng_libpng_read_fuzzer_ranking_unique_branch.svg">
+                                    Each bar shows the total number of code branches found by a given fuzzer.
+                                    The colored area shows the number of unique code branches
+                                    (i.e., branches that were not covered by any other fuzzers).
+                            </div>
+                        </div> <!-- row -->
+
+                        <div class="row">
+                            <div class="col s6 offset-s3">
+                                <h5 class="center-align">Pairwise unique code coverage</h4>
+                                    <img class="responsive-img materialboxed"
+                                         src="libpng_libpng_read_fuzzer_pairwise_unique_coverage_plot.svg">
+                                    Each cell represents the number of code branches covered by the fuzzer
+                                    of the column but not by the fuzzer of the row
+                            </div>
+                        </div> <!-- row -->
+
+                    </div>
+                </li>
+            </ul>
+            
+
+        </div> <!-- id="libpng_libpng_read_fuzzer" -->
+        
+
+        <div id="data" class="section scrollspy">
+
+            <br><br>
+            Check out the <a href="https://google.github.io/fuzzbench/developing-fuzzbench/custom_analysis_and_reports">documentation</a> on how to create customized reports using this data.
+            Also see some example Colab notebooks for doing custom analysis on the data <a href="https://github.com/google/fuzzbench/tree/master/analysis/notebooks">here</a>.
+            
+        </div>    <!-- id="data" -->
+
+    </div> <!-- class="col" -->
+
+    <div class="col hide-on-med-and-down l2">
+        <ul class="section table-of-contents">
+            <li><a href="#summary">experiment summary</a></li>
+            
+            <li><a href="#libpng_libpng_read_fuzzer">libpng_libpng_read_fuzzer</a></li>
+        </ul>
+    </div>
+
+    </div> <!-- class="row" -->
+    </div> <!-- class="container" -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+     M.AutoInit();
+     document.addEventListener('DOMContentLoaded', function() {
+         var toc = document.querySelectorAll('.table-of-contents');
+         M.Pushpin.init(toc);
+
+         var scrollspy_elems = document.querySelectorAll('.scrollspy');
+         var scrollspy_options = {scrollOffset: 0};
+         M.ScrollSpy.init(scrollspy_elems, scrollspy_options);
+
+         var tabs_elems = document.querySelectorAll('.tabs');
+         var tabs_options = {duration: 500};
+         var instance = M.Tabs.init(tabs_elems, tabs_options);
+     });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js"></script>
+    <script>
+     anchors.add();
+    </script>
+</body>
+</html>
